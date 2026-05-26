@@ -34,9 +34,6 @@ uv run python -m ipykernel install --user --name pose312 --display-name "Python 
 
 # run the notebook end-to-end
 uv run jupyter nbconvert --to notebook --execute --inplace pose_activity_classifier.ipynb
-
-# build the PDF report from the results
-uv run python generate_report.py
 ```
 
 Or open `pose_activity_classifier.ipynb` in Jupyter/VS Code and select the
@@ -48,7 +45,6 @@ Or open `pose_activity_classifier.ipynb` in Jupyter/VS Code and select the
 | `pose_activity_classifier.ipynb` | Main notebook — all three tasks, explained step by step |
 | `ground_truth.csv` | Manually-labeled per-frame `standing`/`sitting` labels |
 | `results.csv` | Per-frame angles + predicted + ground-truth labels |
-| `generate_report.py` | Builds `report.pdf` from the results |
 | `report.pdf` | 1–2 page report (approach, rule logic, accuracy, observations, screenshots) |
 | `outputs/annotated.mp4` | Skeleton-overlay video |
 | `outputs/*.png` | Smoothing, angle, timeline, and overlay screenshots |
