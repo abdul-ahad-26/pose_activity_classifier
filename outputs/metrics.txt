@@ -1,0 +1,5 @@
+accuracy=0.9935
+knee_thresh=130
+hip_thresh=130
+transitions=[57, 141, 317, 418]
+mismatches=[140, 141, 416, 417]
